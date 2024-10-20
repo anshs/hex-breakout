@@ -9,13 +9,19 @@
   <link rel="stylesheet" href="hexstyle.css">
 </head>
 <body>
-  <header class="w-full text-white text-center py-4 bg-transparent">
-    <h1 class="text-3xl font-bold text-white">Hex Breakout</h1>
-  </header>
 
-  <div class="flex flex-col lg:flex-row h-auto">
-    <!-- Controls Sidebar -->
-    <div id="controls" class="w-full lg:w-1/4 p-4 shadow-md rounded-2xl bg-gray-800 mx-2 mb-4 lg:ml-2 lg:mb-0">
+  <!-- Container for Canvas and Controls -->
+  <div class="flex flex-col h-auto max-w-md mx-auto">
+    <header class="w-full text-white text-center py-4 bg-transparent">
+      <h1 class="text-xl font-bold text-white">Hexagons with axial coordinates</h1>
+    </header>
+    <!-- Canvas Section -->
+    <div class="w-full p-4 bg-gray-200 rounded-2xl mx-2 mb-4">
+      <canvas id="hexbreakout" class="w-full h-auto rounded-2xl"></canvas>
+    </div>
+
+    <!-- Controls Section -->
+    <div id="controls" class="w-full p-4 shadow-md rounded-2xl bg-gray-800 mx-2 mb-4">
       <h5 class="text-xl font-bold mb-4">Controls</h5>
 
       <!-- Slider for Hexagon Radius -->
@@ -44,6 +50,7 @@
           <span class="ml-2">Pointy Side Upwards</span>
         </div>
       </div>
+
       <!-- Toggle for Grid -->
       <div class="mb-4">
         <label class="block mb-2">Show Grid</label>
@@ -52,11 +59,6 @@
           <div class="w-11 h-6 bg-blue-600 rounded-full peer-focus:ring-2 peer-focus:ring-blue-300 peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
         </label>
       </div>
-    </div>
-
-    <!-- Canvas Section -->
-    <div class="w-full lg:flex-1 p-4 bg-gray-200 rounded-2xl mx-2 mb-4 lg:ml-0 lg:mb-0">
-      <canvas id="hexbreakout" class="w-full h-auto rounded-2xl"></canvas>
     </div>
   </div>
 </body>

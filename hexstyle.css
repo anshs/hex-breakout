@@ -1,5 +1,12 @@
-#hexbreakout{
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+#controls {
+    background-color: #171717;
+}
+
+#hexbreakout {
     border: 1px solid black;
-    margin: 0 auto;
-    display:block;
 }
