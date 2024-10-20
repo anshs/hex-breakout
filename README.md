@@ -1,24 +1,11 @@
----
-author: Anshul Sharma
-title: Why Hexagons are the MVP of Shapes (and How to Draw Them in JavaScript)
-tags:
-  - learning
-  - code
-  - gamdev
-  - javascript
-description: In this post, we dive into why hexagons are the ultimate shape and how to draw them in JavaScript using the axial coordinate system. We cover the basics of hexagonal geometry and provide code to tile hexagons on an HTML5 canvas.
-ogImage: hex-part-1.png
-githubLink: https://github.com/anshs/Flappy-Bird-v1
-link: https://anshulsharma.in/posts/drawing-hexagonal-grids-part-1/
----
-Original Blog Post Link: https://anshulsharma.in/posts/drawing-hexagonal-grids-part-1/
-Demo: 
+Original Blog Post and Demo Link: https://anshulsharma.in/posts/drawing-hexagonal-grids-part-1/
 
 There are just three regular polygons that can perfectly tile a 2D plane: triangles, squares, and hexagons. Let’s face it, squares are too basic. And triangles, well you just cannot trust them. But hexagons? they’re the Goldilocks of shapes—symmetrical, but not annoyingly so. It wasn’t until much later in life that I realized hexagons weren’t just cool to look at, but they also serve a function. They came back into my life when I was working at Uber, where we used the [H3 Hexagonal Grid System](https://www.uber.com/blog/h3/) to divide cities into tiles for better decision-making — whether for surge pricing or dispatching drivers.
 
 It was inevitable that I fell into the hexagonal rabbit hole, I couldn’t help but marvel at how often this six-sided wonder shows up in nature. Take honeycombs, for instance. Honey bees must store the maximum amount of honey (area) with as little wax as possible (perimeter). Technically, a circle provides the greatest surface area for the least amount of perimeter. However, when we use circles to tile the plane, they leave gaps in between. Honey bees cannot afford to waste honey real estate, especially in this economy! Enter hexagons — providing maximum space efficiency while tiling the plane perfectly.
 
 ![A natural honeycomb - by [Marian Bijlenga](https://www.flickr.com/photos/marianbijlenga/3841529901/)](honeycomb.png)
+
 A natural honeycomb - by [Marian Bijlenga](https://www.flickr.com/photos/marianbijlenga/3841529901/)
 
 If that’s not enough, just glance at Saturn’s north pole. The gas giant flaunts a massive hexagonal cloud system that’s about the size of six Earths! If you are still not convinced on the superiority of Hexagons, watch CGP Grey’s “[Hexagons are the Bestagons](https://youtu.be/thOifuHs6eY)” as the ultimate source of hex gospel.
